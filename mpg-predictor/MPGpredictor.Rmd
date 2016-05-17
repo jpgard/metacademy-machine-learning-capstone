@@ -41,7 +41,7 @@ mpgdata = read.table("auto-mpg.data", col.names = c("mpg", "cylinders", "displac
 
 mpgdata <- mpgdata %>%
     separate(car_name, into = c("make", "model"), sep = " ", extra = "merge") %>%
-    mutate(cylinders = as.factor(cylinders), make = as.factor(make))
+    mutate(cylinders = as.factor(cylinders), make = as.factor(make), model = as.factor(model))
 
 ```
 
